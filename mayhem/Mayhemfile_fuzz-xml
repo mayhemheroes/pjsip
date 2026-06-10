@@ -1,0 +1,8 @@
+project: pjsip
+target: fuzz-xml
+testsuite:
+  - file:///mayhem/mayhem/testsuite/fuzz-xml
+cmds:
+  - cmd: /mayhem/fuzz-xml
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz-xml.dict
