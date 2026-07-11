@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<watcherinfo xmlns="urn:ietf:params:xml:ns:watcherinfo" version="0" state="full">
+ <watcher-list resource="sip:professor@example.net" package="presence">
+  <watcher status="active" id="8ajksjda7s" event="approved">sip:userA@example.net</watcher>
+  <watcher status="pending" id="hh8juja87s997" event="subscribe" display-name="Mr. Subscriber">sip:userB@example.org</watcher>
+ </watcher-list>
+</watcherinfo>

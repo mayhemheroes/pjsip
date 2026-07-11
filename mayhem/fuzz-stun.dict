@@ -1,0 +1,38 @@
+# STUN/TURN binary dictionary (RFC 5389 / RFC 5766) for pjsip fuzz-stun
+# message type (class+method), big-endian 16-bit, at offset 0
+# Binding request / response / error
+"\x00\x01"
+"\x01\x01"
+"\x01\x11"
+# Allocate (TURN)
+"\x00\x03"
+"\x01\x03"
+# Refresh / CreatePermission / ChannelBind / Send / Data
+"\x00\x04"
+"\x00\x08"
+"\x00\x09"
+"\x00\x16"
+"\x00\x17"
+# magic cookie (always follows the 16-bit length)
+"\x21\x12\xA4\x42"
+# common attribute type codes (big-endian 16-bit)
+"\x00\x01"
+"\x00\x06"
+"\x00\x08"
+"\x00\x09"
+"\x00\x0d"
+"\x00\x12"
+"\x00\x13"
+"\x00\x14"
+"\x00\x15"
+"\x00\x16"
+"\x00\x19"
+"\x00\x20"
+"\x80\x22"
+"\x80\x28"
+"\x80\x2a"
+# string attr values pjsip parses
+"USERNAME"
+"REALM"
+"NONCE"
+"pjnath"

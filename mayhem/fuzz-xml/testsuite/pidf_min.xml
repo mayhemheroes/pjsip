@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" entity="pres:someone@example.com">
+ <tuple id="t1">
+  <status><basic>open</basic></status>
+  <contact priority="1.0">sip:someone@example.com</contact>
+ </tuple>
+ <note>open</note>
+</presence>

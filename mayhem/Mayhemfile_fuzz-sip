@@ -1,0 +1,9 @@
+project: pjsip
+target: fuzz-sip
+cmds:
+  - cmd: /mayhem/fuzz-sip
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz-sip.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-sip/testsuite
